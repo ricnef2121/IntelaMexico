@@ -1,0 +1,8 @@
+.cardContentAddElement{
+    height: 100%;
+}
+.cardBodyAddElement{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

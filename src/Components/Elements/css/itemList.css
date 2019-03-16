@@ -1,0 +1,47 @@
+.cardFather{
+    height:100%;
+    
+}
+.CardItem{
+    margin:5px;
+    padding: 0px;
+}
+.cardbody{
+    height: 100%
+}
+.CardItem>.cardbody>.row1>.img{
+    opacity: 0;
+    display: flex;
+    vertical-align:middle;
+    justify-content: flex-end;
+    
+}
+.CardItem>.cardbody>.row1>.img:hover{
+    opacity: 1;
+}
+.name{
+   
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.row1{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.footerCard{
+    background-color:white;
+    border-color:white;
+}
+.buttonAddElements{
+    width:100%;
+}
+
+.buttonDelete {
+    background-color: transparent;
+    width:100%;
+    border-color: transparent; 
+    
+}

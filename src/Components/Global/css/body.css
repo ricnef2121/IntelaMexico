@@ -1,0 +1,21 @@
+.bodystyle {
+    margin: 0px ;
+    padding: 0px ;
+    height: 37.55pc ;
+    background-color: gray;
+
+}
+.colPadre {
+    background-color: #fafbfc ;
+    padding: 0px;
+    height:100%;
+}
+.rowBody {
+    margin:0px;
+    padding:10px;
+    height: 100%;
+    
+}
+/*
+padding-bottom: 10px;
+padding-top:10px;*/
