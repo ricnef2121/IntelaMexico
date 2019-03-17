@@ -6,3 +6,12 @@
     align-items:center;
     justify-content:center;
 }
+.ColTitle {
+    display: flex ;
+    text-align: justify;
+}
+.ColButtoms{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -5,11 +5,15 @@ import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { connect } from 'react-redux';
-import { Link,Redirect } from 'react-router-dom'
-import { addElement,updateElement } from '../../Store/actions/actions-elements'
+import PropTypes from 'prop-types'
 import uuidv1 from 'uuid';
-
+import { Link,Redirect } from 'react-router-dom'
 import './css/addElement.css'
+
+import { addElement,updateElement } from '../../Store/actions/actions-elements'
+
+
+
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -20,6 +24,12 @@ function mapDispatchToProps(dispatch) {
 }
 
 class AddElement extends Component {
+    static propsTypes = {
+        elementSelected: PropTypes.object.isRequired,
+        addElement: PropTypes.func.isRequired,
+        updateElement: PropTypes.func.isRequired
+    }
+
     constructor() {
         super();
         this.state={
@@ -92,7 +102,7 @@ class AddElement extends Component {
                 <Card.Body className="cardBodyAddElement">
 
                     <Row>
-                        <Col md={12} style={{ display: 'flex', textAlign: 'justify' }}>
+                        <Col md={12} className="ColTitle">
                             <h2>{this.state.title}</h2>
 
                         </Col>
@@ -112,7 +122,7 @@ class AddElement extends Component {
                                         onChange={this.handleChange}
                                     />
                                 </Form.Group>
-                                <Col md={4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <Col md={4} className="ColButtoms">
                                     <Link to="/">
                                         <Button variant="secondary" >
                                             Cancelar

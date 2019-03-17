@@ -22,8 +22,9 @@ function mapDispatchToProps(dispatch) {
 
 class ItemList extends Component {
     static propsTypes = {
-        elements: PropTypes.object.isRequired,
-        deleteElement: PropTypes.func.isRequired
+        elements: PropTypes.array.isRequired,
+        deleteElement: PropTypes.func.isRequired,
+        selectElement: PropTypes.func.isRequired
     }
     constructor(){
         super();
