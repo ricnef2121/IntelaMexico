@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
-import { Link, NavLink } from "react-router-dom";
+import Logo from '../../public/images/intela.png'
+import { Link } from "react-router-dom";
+import './css/header.css'
 
 
 
@@ -10,17 +11,10 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <Navbar.Brand as={Link} to='/'>React-Bootstrap</Navbar.Brand>
+                <Navbar collapseOnSelect expand="lg" >
+                    <Navbar.Brand as={Link} to='/'><Image className="imgLogo" src={Logo} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse className="justify-content-end" id="justify-content-end">
-                      {
-                          /**
-                           *   <Nav defaultActiveKey={location.pathname}>
-                            <Nav.Link as={NavLink} to='/' exact>Home</Nav.Link>                            
-                        </Nav>
-                           */
-                      }
+                    <Navbar.Collapse className="justify-content-end" id="justify-content-end">                     
                     </Navbar.Collapse>
                 </Navbar>
             </div>
